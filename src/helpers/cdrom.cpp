@@ -18,7 +18,7 @@ void CDRomHelper::load_file(const char *file_name, eastl::function<void(void *, 
     printf("CD ROM: Attempting to read %s...\n", file_name);
 
     // read the file off of the disc
-    m_cdromLoader.readFile("MODELS/CUBE.MB;1", m_isoParser,
+    m_cdromLoader.readFile(file_name, m_isoParser,
                            [file_name, callback](psyqo::Buffer<uint8_t> &&buffer)
                            {
                                printf("CD ROM: Finished reading file from cd rom.\n");
