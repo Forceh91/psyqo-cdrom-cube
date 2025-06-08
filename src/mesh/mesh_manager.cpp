@@ -24,7 +24,7 @@ void MeshManager::load_mesh_from_cdrom(const char *mesh_name, eastl::function<vo
     // try and load the mesh off the cdrom
     char mesh_file_name[MAX_CDROM_FILE_NAME_LEN];
     CDRomHelper::get_iso_file_name(mesh_name, mesh_file_name);
-    CDRomHelper::load_file(mesh_file_name, [mesh_name, mesh_ix, onComplete](psyqo::Buffer<uint8_t> buffer)
+    CDRomHelper::load_file(mesh_file_name, [mesh_name, mesh_ix, onComplete](psyqo::Buffer<uint8_t> &&buffer)
                            {
                             void * data = buffer.data();
                             size_t size = buffer.size();
