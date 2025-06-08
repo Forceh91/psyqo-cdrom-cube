@@ -15,7 +15,7 @@ class CDRomHelper final
 
 public:
     static void init();
-    static void load_file(const char *file_name, eastl::function<void(void *, size_t)> callback);
+    static void load_file(const char *file_name, eastl::function<void(psyqo::Buffer<uint8_t> &&)> callback);
     static void get_iso_file_name(const char *file_name, char *iso_filename);
 };
 
