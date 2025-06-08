@@ -13,7 +13,7 @@ void CDRomHelper::init()
 
 // reads a file off of the cd rom into memory (most likely a file full of binary data)
 // dont forget to free the returned data when you're done with it
-void CDRomHelper::load_file(const char *file_name, eastl::function<void(psyqo::Buffer<uint8_t>)> callback)
+void CDRomHelper::load_file(const char *file_name, eastl::function<void(psyqo::Buffer<uint8_t> &&)> callback)
 {
     printf("CD ROM: Attempting to read %s...\n", file_name);
 
