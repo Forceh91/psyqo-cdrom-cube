@@ -81,6 +81,11 @@ void MadnightEngine::prepare()
 
 void MadnightEngine::createScene()
 {
+    SubCreateScene().resume();
+}
+
+psyqo::Coroutine<> MadnightEngine::SubCreateScene()
+{
     pushScene(&engineScene);
     engineScene.fetch_cube_from_cdrom();
 }

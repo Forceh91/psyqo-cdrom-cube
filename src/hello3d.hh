@@ -4,11 +4,13 @@
 #include "psyqo/application.hh"
 #include "psyqo/trigonometry.hh"
 #include "psyqo/advancedpad.hh"
+#include "psyqo/coroutine.hh"
 
 class MadnightEngine final : public psyqo::Application
 {
     void prepare() override;
     void createScene() override;
+    psyqo::Coroutine<> SubCreateScene();
 
 public:
     psyqo::Trig<> m_trig;
