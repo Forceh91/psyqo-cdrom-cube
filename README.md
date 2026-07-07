@@ -1,3 +1,7 @@
+# OBSELETE
+
+## **This project is now obsolete after various updates to psyqo and I highly recommend taking a look at my [Madnight engine](https://github.com/Forceh91/psyqo-madnight-engine) instead. It has much better examples for loading things off of the CD-Rom thanks to psyqo's archive format.**
+
 # PS1 Mesh Loader Example (using psyqo)
 
 This is a practical example of how to load a 3D model from the CD-ROM on the original PlayStation using [psyqo](https://github.com/pcsx-redux/nugget/tree/main/psyqo). It demonstrates:
